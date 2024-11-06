@@ -1,0 +1,667 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:PP Neue Montreal Medium;
+}
+ @font-face {
+    font-family: FoundersGroteskCondensed;
+    src: url(./Founders\ Grotesk\ X-Condensed.ttf);
+}
+@font-face {
+    font-family:foundersgrotesk  ;
+    src: url(./founders-grotesk-x.cd2d353.woff2);
+}
+
+ 
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.logo {
+    color: #111;
+width: 210px;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:30px 25px 0 25px ;
+    position: absolute;
+ z-index: 99;}
+.nav .nav2{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.nav h2{
+    color:#111;
+    font-size: 22px;
+    mix-blend-mode: difference;}
+    .under{
+    border-bottom: solid 2px black;
+}
+.main{
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    
+    background-color:#E5E7DF;
+    overflow-x: hidden;
+}
+.textpart{
+    height: 24vw;
+    width: 100%;
+    padding: 140px 30px 0 20px ;
+font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+ .textpart .npart1{
+    width:20vw;
+font-size:20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #494A48;}
+.textpart .npart2{
+    width: 53vw;
+font-size: 50px;
+    line-height: 50px;
+}
+.scrollpart{
+    display: flex;
+     white-space: nowrap;}
+.scrollpart img{
+    height: 21.8vw;
+/* height: 30vw; */
+width: 29vw ;
+}
+.scrollpart .dabba p{
+    font-size: 35vw; 
+    /* height: 24vw; */
+    /* letter-spacing: 0.5vw; */
+    /* transform: scaleY(1.2) ; */
+ font-family:  FoundersGroteskCondensed;
+    /* font-size: 30vw; */
+/* color: #1E1E1E; */
+    /* letter-spacing: -10px; */
+    margin-bottom: 48px;
+}
+.scrollpart .dabba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    height: 23vw;
+    /* background-color: red; */
+}
+.scrollpart .dabba{
+    flex-shrink: 0;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    height: 30px;
+    width: 250px;
+    /* background-color:#dadada; */
+    position: relative;
+overflow: hidden;
+cursor:pointer;
+}
+.line{
+    width: 350%;
+    height: 1px;
+    display: flex;
+    white-space: nowrap;
+    left:-250%;
+    position: absolute;
+    transition: all ease 1s;
+    bottom:2%;
+}
+.line .boxb1,.boxb3,.boxb2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(112, 60, 60);
+}
+.line .boxb2{
+    width: 150%;
+    background-color: white;
+}
+.box:hover .box .line{
+    left:0;}
+.box .arrowslider{
+    position: relative;
+    left: 83%;
+    width: 35px;
+    overflow: hidden;
+    height:40px;
+}
+.arrowslider .arrow{
+    height:fit-content;
+    /* background-color:pink; */
+    display: flex;
+    width: 70px;
+    gap:2px;
+    left: -200%;
+    transition: all ease 0.8s;
+    /* margin-left: 90%; */
+position: absolute;
+
+}
+.arrow .icon{
+    flex-shrink: 0;
+    font-size: 30px;
+    
+    font-weight: 600;
+    rotate: 270deg;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       }
+.box:hover .arrow{
+    left:0;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    margin-top: 15vw;
+    padding: 2vw;
+    background-color:#E5E7DF;
+}
+.p{
+    width: 80%;
+    font-size: 3vw;
+    overflow: hidden;
+   /* background-color: red; */
+}
+.page2 .page2part2{
+ margin-top: 3.4vw;
+}
+.page3{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+border-top: 1px solid rgba(128, 128, 128, 0.534);
+padding: 0  2.4vw;
+background-color: #E5E7DF;
+}
+
+.page3 .page3part1 , .page3part2{
+    height: 100%;
+    width: 50%;
+    /* background-color: pink; */
+    padding-top: 2.4vw;
+
+}
+.page3 .page3part1{
+    text-transform: uppercase;
+    font-size: 1.4vw;
+}
+.page3 .page3part2 .text1{
+width: 100%;
+padding-bottom: 3.4vw;
+}
+.page3 .text1 .head{
+    width: 100%;
+font-size: 1.5vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+.page3 .text1 .para{
+    margin-top:1.3vw;
+    width: 65%;
+    font-size: 1.4vw;
+    color:gray;
+line-height: 1.9vw;
+}
+.page4{
+    /* padding: 2vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 32vw;
+    text-transform: uppercase;
+    height: 160vh;
+width: 100%;
+position: relative;
+
+background-color: white;
+}
+.page4 ::-webkit-scrollbar{
+    display: none;
+}
+.work{
+    width:90%;
+    height:15vw;
+    /* background-color:red; */
+font-size: 36vw;
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+position: relative;
+padding-left: 100px;
+background-color: red;
+    font-family:  FoundersGroteskCondensed;
+    font-size: 28vw;
+    left: 50%;
+     transform: translate(-50%,0);}
+.prem{
+    font-family:  FoundersGroteskCondensed;
+    top: 0%;
+    position: absolute;
+
+}
+ .img{
+    width: 450px;
+    height:330px;
+    /* margin-top: 32px; */
+     position: absolute;
+    left:50%;
+    top:42%;
+    transform: translate(-50%,0);
+    z-index: 99;
+}
+.img video{
+    object-position: cover;
+    object-fit: cover;
+    /* object-s; */
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.wo{
+    position:absolute;
+    left: 0%;
+    font-size: 36vw;
+    font-family:  FoundersGroteskCondensed;
+    top:30%;
+    }
+.rk{
+    position: absolute;
+    left: 65%;
+    letter-spacing: 0.5vw;
+    font-family:  FoundersGroteskCondensed;
+    font-size: 36vw;
+    top:80%;
+    top:30%;
+}
+.page5{
+    min-height: 80vh;
+    width: 100%;
+}
+.page6{
+    min-height: 150vh;
+    width: 100%;
+}
+/* .client{
+    width: 100%;
+    min-height: 150vh;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+
+.client1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+ font-family:  FoundersGroteskCondensed;
+
+}
+.client1 .part11{
+    font-size:1.4vw;
+}
+.client1 .part12{
+    font-size: 3.4vw;
+    width: 60%;
+}
+.service{
+    font-size: 32vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:foundersgrotesk  ;}
+.menucontainer{
+    margin-left: 500px;
+}
+.menu{
+   
+    width: 54vw;
+  
+    
+ 
+   
+}
+.menu .mpart1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 6vw;
+    font-size: 2vw;
+
+    
+}
+ .boxbtn{
+background-color: #353535;
+padding: 10px;
+border-radius: 5px;
+margin-left: 10px; */
+
+/* }
+.menu  .mpart2{
+    height: 20vw;
+    width: 100%;
+    /* background-color: pink; */
+   /* max-height: 0;
+   transition: all ease 0.5s;
+   overflow:hidden;
+  
+}
+
+.active{
+    max-height: 20vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    display: block;
+} */ 
+
+.client{
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.4vw;
+}
+
+.client1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service{
+    font-size: 20vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.menucontainer{
+    margin-left: 500px;
+}
+.menu{
+   
+    width: 54vw;
+  
+    
+ 
+   
+}
+.part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 6vw;
+    font-size: 2vw;
+
+    
+}
+ .boxbtn{
+background-color: #353535;
+padding: 10px;
+border-radius: 5px;
+margin-left: 10px;
+
+}
+ .part2{
+    height: 20vw;
+    width: 100%;
+    /* background-color: pink; */
+   max-height: 0;
+   transition: all ease 0.5s;
+   overflow:hidden;
+  border-bottom: 1px solid gray;
+}
+
+.active{
+    max-height: 20vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    display: block;
+}
+
+.client .extraspace{
+    height: 40vh;
+    width: 100%;
+}
+.bundledprojects{
+    width: 100%;
+    padding: 20px;
+   background-color: black;
+   color: white;
+   border-top: 1px solid gray;
+}
+.bundledprojects .bp1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+   }
+.bundledprojects .bp21{
+    font-size: 2vw;
+}
+.bundledprojects .bp2{
+    width:100%;
+    /* background-color: pink; */
+    height:fit-content;
+    margin-top:30px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 8vw;
+    /* background-color:red; */}
+.bundledprojects .bp22{
+    width: 60%;
+    font-size: 3vw;
+    height: 40vw;
+}   
+.bundledprojects .bp22 .bp221{
+    margin-top: 40px;
+    display: flex;
+    font-size: 1.5vw;
+    align-items: center;
+gap: 1.3vw;
+}
+.circle{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+}
+.circle img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.bundledprojects .bp3{
+   height: 16vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2px;
+}
+.bundledprojects .bp3 .bp31{
+    width: 20%;
+    height: 100%;
+  border:1px solid rgba(255, 255, 255, 0.694);
+  padding: 40px;
+    background-color: black;
+}
+
+.b  p{
+ width: 100%;
+ line-height: 1 ;
+       }
+.bundledprojects .circle img{
+    object-fit: cover;
+    object-position: cover;
+   }
+.bp31 img{
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+.page7 {
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: pink; */
+
+}
+.page7 img{
+    object-fit: cover;
+    object-position: center;
+}
+.page8{
+    width: 100%;
+    min-height: 100vh;
+}
+.page8 .p81{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.page8  .anim{
+font-size: 33vw;
+position: relative;
+    width: 99%;
+    /* background-color: pink; */
+    height: 32vw;
+   text-transform: uppercase;
+ overflow: hidden;
+ /* background-color: pink; */
+/* border: 1px solid black; */
+}
+.page8 .p83{
+    padding-left: 3vw;
+gap:40px;
+width: 100%;
+}
+.page8 .anim .anim1{
+top: 100%;
+position: absolute;
+    font-family:  FoundersGroteskCondensed;
+    transition: all ease 1s;
+}
+.page8 .anim2{
+    height: 23vw;
+    width: 25vw;
+    background-color: red;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    background-image: url(https://www.datocms-assets.com/106915/1717685568-betteroffstudio_culture-loop_8.jpg?auto=format%2Ccompress&fit=max&h=800&w=800);
+    background-position: center;
+    background-size:cover ;
+}
+.page8 .p83{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page9{
+    width: 100%;
+    height: 120vh;
+    margin-top: 3vw;
+    background-color: black;
+    color: white;
+    /* overflow-y: hidden; */
+    
+}
+.p91{
+    padding-top: 2vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 3vw;
+    padding: 20px;
+    
+}
+.p92{
+    width: 40%;
+    padding: 20px;
+    font-size: 1.4vw;
+    margin-top: 3vw;
+}
+.p921{
+    width: 94%;
+    display: flex;
+   justify-content: space-between;
+}
+.p922{
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2vw;
+}
+.p923{
+    font-size: 23vw;
+    display: flex;
+    width: 100%;
+   overflow: hidden;
+
+}
+.p9video{
+    height: 250px;
+    width: 300px;
+    background-color: red;
+    margin-top: 20px;
+}
+.page9 .item{
+    display: flex;
+    align-items: center;
+    animation-name: abc;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    
+}
+.page9 .item p{
+    font-family:  FoundersGroteskCondensed;
+    text-transform: uppercase;
+}
+@keyframes abc {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.p9video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
